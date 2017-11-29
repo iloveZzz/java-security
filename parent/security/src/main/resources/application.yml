@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: test-spring-security
+  thymeleaf:
+    cache: false
+    prefix: classpath:/static/views/
+    suffix: .html
+    mode: HTML5
+    encoding: utf-8
+    content-type: text/html
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/static/
+server:
+  tomcat:
+    uri-encoding: UTF-8
